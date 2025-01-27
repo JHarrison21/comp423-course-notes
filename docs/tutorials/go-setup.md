@@ -36,3 +36,4 @@ This extension adds styled call-out boxes for notes, warnings, and examples, mak
 
 - Understand the fundamentals of Git and the command-line tools
 
+
