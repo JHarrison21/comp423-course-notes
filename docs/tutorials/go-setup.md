@@ -17,6 +17,7 @@ You can check your Go version by running `go version`.
 ---
 
 ### 3. **`admonition`**
+**Explanation**:
 This extension adds styled call-out boxes for notes, warnings, and examples, making them stand out in the text.
 
 **Example Usage**:
