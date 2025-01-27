@@ -67,6 +67,7 @@ Inside the .devcontainer directory, you want to make a json file inside called '
 
 ---
 ### 3. **`Open Project in DevContainer`**
+
 While in VS Code, open the command palette and make sure to search and find "Reopen in Container". When you find it click it.
 ---
 
@@ -75,7 +76,10 @@ Run the following in the terminal:
 
 go version
 
-It should output the version if installed, if not there nothing will be found.
+
+
+!!! note "Go Installation"
+    It should output the version if installed, if not there nothing will be found.
 
 ### 5. **`Create a New Go Project`**
 
