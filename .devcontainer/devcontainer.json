@@ -1,15 +1,11 @@
 {
   "name": "COMP423 Course Notes",
-  "image": "mcr.microsoft.com/devcontainers/go:latest",
+  "image": "mcr.microsoft.com/devcontainers/python:latest",
   "customizations": {
     "vscode": {
-      "settings": {
-          "go.toolsManagement.autoUpdate": true
-      },
-      "extensions": [
-        "golang.go"  // Official Go extension for VSCode
-      ]
+      "settings": {},
+      "extensions": ["ms-python.python"]
     }
   },
-  "postCreateCommand": "go version"  // Run Go version to check if Go is set up correctly
+  "postCreateCommand": "pip install -r requirements.txt"
 }

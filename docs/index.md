@@ -1,3 +1,3 @@
-# Welcome to Jordan Harrison's Course Notes
+# Welcome to Jordan Harrison's Go Tutorial
 
-This is my home page. I will use it to organize and share my course notes.
+This is my home page. I will use it to organize anything related to the tutorial.
