@@ -26,3 +26,13 @@ This extension adds styled call-out boxes for notes, warnings, and examples, mak
 
 !!! warning "Docker Is Not Running"
     Docker has to be running in order to use DevContainers.
+---
+
+**Prerequisites**:
+
+- Make sure VS Code with the Dev Containers extension is installed.
+
+- Make sure Docker is running.
+
+- Understand the fundamentals of Git and the command-line tools
+
