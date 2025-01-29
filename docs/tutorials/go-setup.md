@@ -12,14 +12,14 @@ Here, this tutorial will show you how to set up Go, specifically in a DevContain
 ### 1. **`Create a New Directory and Initialize a New Git Repository`**
 Go to your computer's terminal and go to one of your preferred directories. Run the following: 
 ```shell
-mkdir .devcontainer
-cd .devcontainer
+mkdir comp423-first-project-go
+cd comp423-first-project-go
 git init
 ```
-Create a README file:
+Create a README file and have it link back to this site:
 ```shell
 echo  "# COMP423 Go Hello World" >> README.md
-echo  "[Tutorial Link](https://.github.io/comp423-course-notes/tutorials/go-setup/)" >> README.md
+echo  "[Tutorial Link](https://jharrison21.github.io/comp423-course-notes/)" >> README.md
 ```
 
 Now go ahead and stage and commit your README.
@@ -44,7 +44,9 @@ Now your repo should be completely set up!
 ---
 
 ### 3. **`Configure the DevContainer`**
-Inside the .devcontainer directory, you want to make a json file inside called 'devcontainer.json':
+- Open VS Code and open your preferred directory from earlier. 
+- Inside there, go to the comp423-first-project-go directory and make a .devcontainer directory in the root. 
+- Now make json file inside  .devcontainer called 'devcontainer.json':
 ```json
 {
     "name": "COMP423 Course Notes",
@@ -76,7 +78,7 @@ go version
 
 
 !!! note "Go Installation"
-    It should output the version if installed, if not there nothing will be found.
+    If installed, it should output the version, otherwise, no version number will show.
 ---
 
 ### 6. **`Create a New Go Project`**
