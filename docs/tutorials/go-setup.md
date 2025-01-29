@@ -15,24 +15,15 @@ Run the following in your computer's terminal:
 mkdir .devcontainer
 cd .devcontainer
 git init
-```
----
-### 2. **`Establishing GitHub Connection`**
-- Once logged in on GitHub, click your profile pic. Click the **Create New** tab, then  click **New Repository**.
-- Fill the repository name, description, and visibility options.
-- Click **Create Repository**
-- Go back to your terminal and add your newly created GitHub Repo as a remote
+
+- Create a README file:
 ```shell
-git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+echo  "# COMP423 Go Hello World" >> README.md
+echo  "[Tutorial Link](https://.github.io/comp423-course-notes/docs/tutorials/go-setup/)" >> README.md
 ```
-- Push your local repo
-```shell
-git push --set-upstream origin main
-```
-Now your repo should be completely set up!
 ---
 
-### 3. **`Configure the DevContainer`**
+### 2. **`Configure the DevContainer`**
 Inside the .devcontainer directory, you want to make a json file inside called 'devcontainer.json':
 ```json
 {
@@ -50,6 +41,7 @@ Inside the .devcontainer directory, you want to make a json file inside called '
     "postCreateCommand": "go version"
   }
 ```
+
 ---
 ### 4. **`Open Project in DevContainer`**
 While in VS Code, open the command palette (Command + Shift + P for Mac or Ctrl + Shift + P for Windows/Linux) and make sure to search and find "Reopen in Container". When you find it click it.
