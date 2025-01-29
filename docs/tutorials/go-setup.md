@@ -10,7 +10,7 @@ Here, this tutorial will show you how to set up Go, specifically in a DevContain
 
 ---
 ### 1. **`Create a New Directory and Initialize a New Git Repository`**
-Run the following in your computer's terminal: 
+Go to your computer's terminal and go to one of your preferred directories. Run the following: 
 ```shell
 mkdir .devcontainer
 cd .devcontainer
@@ -18,7 +18,7 @@ git init
 ```
 Create a README file:
 ```shell
-echo  "# COMP423 Rust Hello World" >> README.md
+echo  "# COMP423 Go Hello World" >> README.md
 echo  "[Tutorial Link](https://.github.io/comp423-course-notes/tutorials/go-setup/)" >> README.md
 ```
 
