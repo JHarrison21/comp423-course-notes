@@ -9,21 +9,41 @@ Here, this tutorial will show you how to set up Go, specifically in a DevContain
 - Understand the fundamentals of Git and the command-line tools.
 
 ---
-### 1. **`Create a New Directory and Initialize a new Git Repository`**
+### 1. **`Create a New Directory and Initialize a New Git Repository`**
 Run the following in your computer's terminal: 
 ```shell
 mkdir .devcontainer
 cd .devcontainer
 git init
-
-- Create a README file:
+```
+Create a README file:
 ```shell
-echo  "# COMP423 Go Hello World" >> README.md
-echo  "[Tutorial Link](https://.github.io/comp423-course-notes/docs/tutorials/go-setup/)" >> README.md
+echo  "# COMP423 Rust Hello World" >> README.md
+echo  "[Tutorial Link](https://.github.io/comp423-course-notes/tutorials/go-setup/)" >> README.md
+```
+
+Now go ahead and stage and commit your README.
+```shell
+git add README.md
+git commit -m "1st README Commit"
 ```
 ---
+### 2. **`Establishing GitHub Connection`**
+- Once logged in on GitHub, click your profile pic. Click the **Create New** tab, then  click **New Repository**.
+- Fill the repository name, description, and visibility options.
+- Click **Create Repository**
+- Go back to your terminal and add your newly created GitHub Repo as a remote
+```shell
+git remote add origin https://github.com/<your-username>/<your-repo-name>.git
+```
+Push your local repo
+```shell
+git push --set-upstream origin main
+```
+Now your repo should be completely set up!
+---
 
-### 2. **`Configure the DevContainer`**
+### 3. **`Configure the DevContainer`**
 Inside the .devcontainer directory, you want to make a json file inside called 'devcontainer.json':
 ```json
 {
@@ -41,7 +61,6 @@ Inside the .devcontainer directory, you want to make a json file inside called '
     "postCreateCommand": "go version"
   }
 ```
-
 ---
 ### 4. **`Open Project in DevContainer`**
 While in VS Code, open the command palette (Command + Shift + P for Mac or Ctrl + Shift + P for Windows/Linux) and make sure to search and find "Reopen in Container". When you find it click it.
@@ -96,12 +115,12 @@ Now run the program in the terminal:
 ```shell
 go run main.go
 ```
-This should both compile and run the program
+This is one way to both compile and run the program
 ---
 
 ### 9. **`Use "go build" to Both Build and Run the Program`**
 
-Run the following:
+Another way to compile and run the program is to run the following:
 
 ```shell
 go build -o hello-comp423
