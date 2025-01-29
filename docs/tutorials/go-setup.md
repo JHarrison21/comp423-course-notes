@@ -43,15 +43,17 @@ Run the following in the terminal:
 mkdir .devcontainer
 cd .devcontainer
 git init
-!!! danger
-    Make sure to create a sub directory first. In this case maybe ```COMP423-Go```
-!!! danger
-    make sure to add a README using echo >> and another echo that has a link to your github repo of the tutorial
+
+- Create a README file:
+```shell
+echo  "# COMP423 Go Hello World" >> README.md
+echo  "[Tutorial Link](https://.github.io/comp423-course-notes/docs/tutorials/go-setup/)" >> README.md
+```
 ---
 
 ### 2. **`Configure the DevContainer`**
 Inside the .devcontainer directory, you want to make a json file inside called 'devcontainer.json':
-```shell
+```json
 {
     "name": "COMP423 Course Notes",
     "image": "mcr.microsoft.com/devcontainers/go:latest",
@@ -67,8 +69,6 @@ Inside the .devcontainer directory, you want to make a json file inside called '
     "postCreateCommand": "go version"
   }
 ```
-!!! danger
-    I fixed the code block, You use ```(language here)(new-line)(code here)```. You can look into the file for the syntax
 
 ---
 ### 3. **`Open Project in DevContainer`**
@@ -109,8 +109,7 @@ import "fmt"
 func main() {
     fmt.Println("Hello COMP423")
 }
-!!! danger
-    make sure to add the 2 different ways to run files using go
+
 
 ### 7. **`Make a "Hello COMP423" Program`**
 Now run the program in the terminal:
