@@ -128,3 +128,5 @@ go build -o hello-comp423
 ```
 
 Now anytime you type **./hello-comp423** in the terminal, "Hello COMP423" should pop up.
+!!! danger
+    make sure to say youre the primary auther and link your github. And I just saw in the tutorial expectations that you need to discuss ```build``` in the contecxt of COMP 211's ```gcc```.
